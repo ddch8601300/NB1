@@ -1,0 +1,7 @@
+#### 1. 데이터 불러오기 ####
+rdata3 <- read_excel("survey(흡연자 전처리 변수 줄인 후).xlsx")
+summary(rdata3)
+
+#### 3. 상관관계 ####
+inspect_cor(rdata3, with_col="한달간무단투기횟수") %>% show_plot()
+inspect_cor(rdata3, with_col="무단투기량") %>% show_plot()
